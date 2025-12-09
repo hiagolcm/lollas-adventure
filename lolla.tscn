@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgrb1dvq7xjhx"]
+
+[ext_resource type="Script" uid="uid://cd7hqkqfsmdkf" path="res://lolla.gd" id="1_8bw2f"]
+[ext_resource type="Texture2D" uid="uid://brmf55gg6hb0k" path="res://assets/characters/lolla/lolla.png" id="1_847t3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8bw2f"]
+size = Vector2(105, 118)
+
+[node name="Lolla" type="Area2D"]
+script = ExtResource("1_8bw2f")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("1_847t3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -2)
+shape = SubResource("RectangleShape2D_8bw2f")
